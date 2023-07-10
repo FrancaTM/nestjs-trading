@@ -5,9 +5,9 @@ POST http://localhost:3000/assets
 Content-Type: application/json
 
 {
-    "id": "asset1",
+    "id": "asset2",
     "symbol": "A1",
-    "price": 100
+    "price": 300
 }
 
 ###
@@ -22,4 +22,16 @@ Content-Type: application/json
 
 {
     "id": "wallet2"
+}
+
+###
+GET http://localhost:3000/wallets/wallet1/assets
+
+###
+POST http://localhost:3000/wallets/wallet2/assets
+Content-Type: application/json
+
+{
+    "asset_id": "asset2",
+    "shares": 200
 }
